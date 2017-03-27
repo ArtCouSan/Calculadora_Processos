@@ -24,6 +24,7 @@ public class sjf {
         int contTeste = 0;
         DecimalFormat nf = new DecimalFormat("0.00");
 
+        System.out.println("Numero de processos: ");
         N = scanner.nextInt();
 
         while (N != 0) {
@@ -38,9 +39,11 @@ public class sjf {
             temposIniciais = new int[N];
             for (int i = 0; i < N; i++) {
                 // le e adiciona tempo de ingresso do processo
+                System.out.println("Chegada do processo: " + i );
                 entrada = scanner.nextInt();
                 ingressos.add(entrada);
                 // le e adiciona tempo de duracao do processo
+                System.out.println("Duracao do processo: " + i );
                 entrada = scanner.nextInt();
                 duracoes.add(entrada);
             }
